@@ -1,0 +1,208 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(127, 255, 212, 0.229);
+}
+
+main {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#clearall {
+color: rgb(68, 68, 68);
+text-decoration: underline;
+text-decoration-style: dotted ;
+cursor: pointer;
+}
+
+#clearall:hover{
+  color: rgb(188, 188, 82);
+}
+
+.input2-whole {
+  display: flex;
+  gap: 20px;
+}
+
+.input-container {
+  width: 35%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+  
+}
+
+#answer-empty {
+  width: 35%;
+  background-color: rgb(27, 27, 71);
+  color: white;
+  text-align: center;
+ align-items: center;
+ align-content: center;
+ border-radius: 0px 20px 20px 10%;
+  padding: 20px;
+}
+
+#inputBuild1,
+#inputBuild2,
+#inputBuild3 {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 5px;
+}
+
+#pdiv {
+  background-color: rgba(0, 128, 128, 0.356);
+  width: 10%;
+  text-align: center;
+}
+
+#amount,
+#term,
+#rate {
+  padding: 10px;
+  width: 86%;
+  border: 0ch;
+  outline: 0cap;
+}
+
+.input2-term,
+.input2-rate {
+  width: 50%;
+}
+
+#term,
+#rate {
+  width: 80%;
+}
+
+#termdiv ,#termdiv2 {
+  width: 25%;
+  text-align: center;
+  background-color: rgba(0, 128, 128, 0.356);
+}
+
+#input3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#repay,
+#interest {
+  display: flex;
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+#interest {
+  margin-top: 20px;
+}
+
+#button {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  width: 50%;
+  border: 0cap;
+  border-radius: 50px;
+  background-color: rgb(188, 188, 82);
+  font-weight: bolder;
+}
+
+#answer-complete{
+    width: 35%;
+    background-color: rgb(27, 27, 71);
+    color: white;
+   border-radius: 0px 20px 20px 10%;
+    padding: 20px; 
+    padding-top: 30px;
+}
+
+.answer-div{
+    border-top: 2px solid  rgb(188, 188, 82);
+border-radius: 20px;
+    background-color: rgb(18, 18, 48);
+    padding-left: 20px;
+    padding-bottom: 20px;
+        width: 80%;
+    margin-top: 50px;
+}
+
+#amount-answer{
+    color: rgb(188, 188, 82) ;
+    border-bottom: 1px solid grey;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+#total-answer{
+    color: white;
+font-size: large;
+}
+
+#answer2{
+    padding-top: 10px;
+}
+
+.error{
+  color: red;
+  display: none;
+}
+
+@media (max-width: 950px){
+  main{
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .input-container {
+    width: 85%;
+    padding: 30px;
+    border-radius: 20px 0px 0px 20px;
+
+  }
+
+  .input2-whole {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .input2-term,
+.input2-rate {
+  width: 100%;
+}
+
+#button{
+  width: 100%;
+}
+#answer-empty {
+  width: 100%;
+/* height: 10vh; */
+ border-radius: 0px 0px 0px 0%;
+  padding: 0px;
+}
+
+#answer-complete{
+  width: 100%;
+  
+ border-radius: 0px 0px 0px 0%;
+  padding: 20px; 
+  padding-top: 0px;
+}
+
+.calc{
+  width:85px ;
+}
+}

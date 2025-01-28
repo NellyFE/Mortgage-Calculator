@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="input-container">
+        <div class="header">
+          <h2>Mortgage Calculator</h2>
+          <p id="clearall" >Clear All</p>
+        </div>
+
+        <div class="input1">
+          <p style="color: rgb(68, 68, 68)">Mortgage Amount</p>
+
+          <div id="inputBuild1">
+            <div id="pdiv">
+              <p>£</p>
+            </div>
+            <input type="number" id="amount" value="" />
+          </div>
+          <span id = 'amount-error' class="error">This field is required</span>
+
+        </div>
+
+        <div class="input2-whole">
+          <div class="input2-term">
+            <p style="color: rgb(68, 68, 68)">Mortgage Term</p>
+
+            <div id="inputBuild2">
+              <input type="number" id="term" />
+              <div id="termdiv">
+                <p>years</p>
+              </div>
+            </div>
+            <span id = 'term-error' class="error">This field is required</span>
+          </div>
+
+          <div class="input2-rate">
+            <p style="color: rgb(68, 68, 68)">Interest Rate</p>
+
+            <div id="inputBuild3">
+              <input type="number" id="rate" />
+              <div id="termdiv2">
+                <p>%</p>
+              </div>
+            </div>
+            <span id = 'rate-error' class="error">This field is required</span>
+
+          </div>
+        </div>
+
+        <div id="input3">
+          <p style="color: rgb(68, 68, 68)">Mortgage Type</p>
+
+          <div id="repay">
+            <input type="checkbox" id="repayment" placeholder="Repayment" />
+            <p style="margin-left: 15px">Repayment</p>
+          </div>
+          <span id = 'repayment-error' class="error">This field is required</span>
+
+
+          <div id="interest">
+            <input
+              type="checkbox"
+              id="interest-only"
+              placeholder="Interest Only"
+            />
+            <p style="margin-left: 15px">Interest Only</p>
+          </div>
+          <span id = 'interest-error' class="error">This field is required</span>
+
+        </div>
+
+        <button id="button">
+          <img src="assets/images/icon-calculator.svg" alt="" />
+          <p style="margin-left: 10px">Calculate Repayments</p>
+        </button>
+      </div>
+
+      <div id="answer-empty">
+        <div>
+          <img src="assets/images/illustration-empty.svg" alt="calculator" class="calc" />
+          <h4>Results shown here</h4>
+          <p>
+            Complete the form and click "Calculate Repayments" to <br />see what
+            your monthly repayments would be.
+          </p>
+        </div>
+      </div>
+
+      <div id="answer-complete" style="display: none">
+        <h3>Your results</h3>
+        <p style="color: rgb(161, 161, 175)">
+          Your results are shown below based on the information <br />
+          you provided. To adjust the results, edit the form and <br />
+          click "Calculate Repayments" again.
+        </p>
+
+        <div class="answer-div">
+          <div id="answer1">
+            <p style="color: rgb(161, 161, 175)">Your monthly repayments</p>
+            <span id="amount-answer">£ <span id="monthlyanswer"></span></span>
+          </div>
+
+          <div id="answer2">
+            <p style="color: rgb(161, 161, 175)">
+              Total you'll repay over the term
+            </p>
+            <span id="total-answer">£ <span id = "totalanswer"></span></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
